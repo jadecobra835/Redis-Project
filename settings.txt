@@ -1,0 +1,4 @@
+root: C:\Users\2xand\Devcamp_Coding\Redis 
+path: C:\Program Files\nodejs 
+arch: 64 
+proxy: none
