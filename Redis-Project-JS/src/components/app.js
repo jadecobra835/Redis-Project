@@ -8,18 +8,17 @@ export default class App extends Component {
   render() {
     return (
       <div className='app'>
-        <div className="nav-bar-wrapper">
-          <div className="nav-link-wrapper nav-link-header">
-            <NavLink exact to="/">Redis Link Shortener</NavLink>
-          </div>
-
-          <div className="nav-link-wrapper nav-link-allLinks">
-            <NavLink to="/links">All Links</NavLink>
-          </div>
-        </div>
-        
-
         <Router>
+          <div className="nav-bar-wrapper">
+            <div className="nav-link-wrapper nav-link-header">
+              <NavLink exact to="/">Redis Link Shortener</NavLink>
+            </div>
+
+            <div className="nav-link-wrapper nav-link-allLinks">
+              <NavLink to="/links">All Links</NavLink>
+            </div>
+          </div>
+      
           <div>
             <Switch>
               <Route exact path="/" component={Home} />

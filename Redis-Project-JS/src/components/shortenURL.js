@@ -15,7 +15,6 @@ export default function() {
         .then(data => {
             setKey(data);
             setUrl(urlInput);
-            console.log(response);
         }).catch(error => {
             console.log('Fetch request error', error)
         });
@@ -29,7 +28,7 @@ export default function() {
                 onChange={event => setUrlInput(event.target.value)}
             />
             <button onClick={handleSubmit} id="btn">Shorten URL</button>
-            {key ? <a href={url}>{key}</a> : null }
+            {key ? <a href={url} target='_blank'>https://localhost:3000/{key}</a> : null }
         </div>
     );
 }
